@@ -11,7 +11,7 @@
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a><a href="#limits">访问说明</a></nav></div></header>
+  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a></nav></div></header>
   <main id="top" class="shell">
     <section class="hero" aria-labelledby="page-title">
       <div><div class="eyebrow">Daily Tech Radar</div><h1 id="page-title">每日技术<br>兴趣雷达</h1><p class="hero-lead">今天的主线是把“验证”从最终判定扩展到整个工程过程：VDM 同时推进证明义务与执行轨迹，规格评测开始区分语义确定性和模型能力，CPU 性能验证强调 RTL 与参考模型的逐周期相关；安全侧则提醒我们，AI 已经在降低 PLC 攻击脚本的开发门槛。</p><div class="tag-row" aria-label="兴趣标签"><span class="tag">VDM / 证明义务</span><span class="tag">规格确定性</span><span class="tag">SMT 证书</span><span class="tag">CPU / RTL 验证</span><span class="tag">Rust 类型系统</span><span class="tag">GPU / Chiplet</span><span class="tag">本地大模型</span><span class="tag">ICS 安全</span></div></div>
@@ -79,17 +79,6 @@
       <article class="action"><div class="action-kicker">Action 03 · 排查</div><h3>核对 PLC 与跨 Session 攻击面</h3><p>若环境含 S7 PLC，先查公网暴露、默认凭证、补丁和 ladder logic 完整性；同时确认 Agent 的跨 Session 消息是否需要显式拒绝。</p></article>
     </div></section>
 
-    <section id="limits" aria-labelledby="limits-title"><div class="limits"><h2 id="limits-title">访问限制与缺失</h2><ul>
-      <li><strong>CV：</strong>已用本地 PDF 工具读取完整 3 页，仅提炼硬件模型检查（IC3/PDR/CEGAR）、等式饱和与逻辑综合、LLM 定理证明/推理验证、Frama-C/ACSL/WP、RTL 信息流验证、编译器、GPU/FPGA 等兴趣标签；未在页面暴露身份、联系方式或单位信息。</li>
-      <li><strong>Hacker News：</strong>YC Firebase API 实际检查 topstories 500、newstories 500、beststories 200、askstories 23、showstories 163、jobstories 31；上海自然日内共 637 个 story，分数与评论为 23:49 前后的快照。</li>
-      <li><strong>Reddit：</strong>直接 JSON 端点沿用往期访问限制，改用 ego-browser 读取聚合 new 与 top/day 页面；分数受 vote fuzzing 影响，刚发布条目可能不可见。今天高热仍明显由 LocalLLaMA 占据，formalmethods 当日未见高质量新帖进入前列。</li>
-      <li><strong>Google Scholar：</strong>推荐页可访问，但没有“今天”或“1 天前”组；按规则展开了“来自 7 天前的更多文章”。CEGAR flaw search、ATLAS、Spec-Driven Hardware Evolution、ANTMAN 等高匹配结果均已在往期收录，本期不重复；更旧组仅作背景。</li>
-      <li><strong>Gmail Scholar Alerts：</strong>用 <code>gog</code> 只读检索 <code>in:spam from:scholaralerts-noreply@google.com after:2026/8/20 before:2026/8/22</code>，读取 8 月 21 日关键词、推荐和作者快讯。NeuroAbs 再次出现但已在 8 月 19 日收录；本期只保留新增且高匹配的 SymCert 与 CHERI-RISC-V exploit 验证。</li>
-      <li><strong>X：</strong>22 个指定账号均通过 ego-browser 尝试读取；@AYi_AInotes 返回空时间线，@ruanyf、@camp_cn、@songguoxiansen、@wshuyi、@WeAllKins_cn、@x_sanjin、@MeetHubbleAI_CN、@easychen、@LoopAI_xyz 今天无新内容。其余账号中的活动预告、Web3 营销、重复模型发布与生活短帖未进入精选。</li>
-      <li><strong>GitHub Trending：</strong>日榜读取 17 个仓库，并用 GitHub API 复核所选项目语言、总星与 forks；modular、ai-memory、OpenViking、munder-difflin、OpenLogi、Agent Substrate、AI-Infra-Guard、turbovec 等往期项目继续禁入。日增星为 Trending 页面快照，不等于 API 的严格 24 小时增量。</li>
-      <li><strong>arXiv 时间：</strong>8 月 21 日 recent 批次为 cs.LO 7 条、cs.AR 12 条、cs.SE 23 条；“8 月 21 日新收录”指 recent 页面当天批次，原始 v1 时间另行标注，交叉收录的旧 v1 未冒充当天首次发布。</li>
-      <li><strong>时间语义：</strong>扫描快照固定在 2026 年 8 月 21 日 23:49（Asia/Shanghai）；临近午夜的低讨论条目已明确标出，不用之后形成的热度倒填。</li>
-    </ul><p class="method">方法：先将 8 月 15–20 日 404 个历史外链与已收录事件设为禁入集合，再按规范化 URL、arXiv ID、仓库和事件跨来源合并。35 条精选统一按兴趣相关性、技术深度、新鲜度、影响与讨论质量排序；社区自报性能、厂商 benchmark 和论文实验数字均保留来源归因。</p></div></section>
   </main>
   <footer class="shell">每日技术兴趣雷达 · 2026-08-21<br><a class="back" href="#top">↑ 回到顶部</a> · <a class="back" href="../../index.html">← 返回报告归档</a></footer>
 </body>

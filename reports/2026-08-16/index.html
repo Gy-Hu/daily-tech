@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a><a href="#limits">访问说明</a></nav></div></header>
+  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a></nav></div></header>
   <main id="top" class="shell">
     <section class="hero" aria-labelledby="page-title">
       <div><div class="eyebrow">Daily Tech Radar</div><h1 id="page-title">每日技术<br>兴趣雷达</h1><p class="hero-lead">今天的主线不是“又一个 Agent”，而是如何把生成结果接回可检查的规格、真实执行、静态分析与硬件验证工具链。</p><div class="tag-row" aria-label="兴趣标签"><span class="tag">IC3 / PDR</span><span class="tag">程序规格 / WP</span><span class="tag">SMT / SAT</span><span class="tag">RTL / 信息流安全</span><span class="tag">逻辑综合</span><span class="tag">编译器</span><span class="tag">GPU / CUDA</span><span class="tag">本地大模型</span><span class="tag">Rust / 安全</span></div></div>
@@ -79,15 +79,6 @@
       <article class="action"><div class="action-kicker">Action 02 · 小实验</div><h3>给 Agent 验证状态加“过期”语义</h3><p>在一个小仓库试 ProofRun 或自行实现 HEAD + dirty tree 指纹，让 test、lint、Frama-C WP 结果在代码变化后自动转为 STALE。</p></article>
       <article class="action"><div class="action-kicker">Action 03 · 测量</div><h3>建立 Qwen reasoning budget 曲线</h3><p>固定 10 个规格生成/证明任务，记录 low、medium、xhigh 的 token、墙钟、峰值显存、上下文耗尽和 checker 通过率。</p></article>
     </div></section>
-    <section id="limits" aria-labelledby="limits-title"><div class="limits"><h2 id="limits-title">访问限制与缺失</h2><ul>
-      <li><strong>arXiv：</strong>8 月 16 日为周日，cs.LO、cs.AR、cs.SE recent 页最新批次仍是 8 月 14 日（论文元数据多为 8 月 13 日），没有把它们写成“今天新发”。</li>
-      <li><strong>Google Scholar：</strong>推荐页可访问并展开了 6 天、7 天折叠组；页面没有“今天”或“1 天前”组。9 天前的 CPV 因与兴趣画像极高匹配，以背景精读收录并明确降时效。</li>
-      <li><strong>Gmail Scholar Alerts：</strong>账号可读，但 <code>from:scholaralerts-noreply@google.com after:2026/08/13</code> 返回空；最近邮件为 2025-06-06，未拿旧邮件补当日论文。</li>
-      <li><strong>Reddit：</strong>公开 JSON 端点返回空/拦截，改用已登录浏览器读取聚合页与帖子页；分数和评论为页面快照，可能继续变化。</li>
-      <li><strong>X：</strong>@dotey、@ruanyf、@AYi_AInotes 的公开时间线本次返回空；@camp_cn、@songguoxiansen、@WeAllKins_cn、@x_sanjin、@MeetHubbleAI_CN、@easychen、@ZetaChain_CH、@LoopAI_xyz、@KiteAIChinese 没有今天且有实质信息的更新；其余营销或闲聊已剔除。</li>
-      <li><strong>GitHub Trending：</strong>全站 daily 页本次仅显示 8 个条目。昨日已详写的 Cordis、Needle 即使继续上榜也不重复；只收录今天新增或出现新验证信号的项目。</li>
-      <li><strong>来源访问：</strong>Anthropic multi-agent systems 页面在浏览器中报 <code>ERR_CONNECTION_CLOSED</code>，因此虽 HN 讨论活跃，本期没有在无法核验正文的情况下收录。</li>
-    </ul><p class="method">方法说明：兴趣标签来自 CV 中与内容筛选相关的研究、工程和技能概括；没有输出联系方式、机构细节等个人敏感信息。同一论文、项目或事件跨 HN、Reddit、GitHub、Scholar 合并为一条。热度、时间与项目语言均以原始页面或官方 API 可确认值为准。</p></div></section>
   </main>
   <footer><div class="shell">生成于 2026-08-16 23:58（Asia/Shanghai）。事实链接优先指向论文、仓库、官方文章或原始讨论。<br><a class="back" href="#top">返回顶部 ↑</a></div></footer>
 </body>

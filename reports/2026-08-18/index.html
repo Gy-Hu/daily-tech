@@ -14,7 +14,7 @@
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a><a href="#limits">访问说明</a></nav></div></header>
+  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a></nav></div></header>
   <main id="top" class="shell">
     <section class="hero" aria-labelledby="page-title">
       <div><div class="eyebrow">Daily Tech Radar</div><h1 id="page-title">每日技术<br>兴趣雷达</h1><p class="hero-lead">今天最值得追的不是“又一个 Agent”，而是可核验的执行边界：算术电路验证把遍历与代数推理统一起来，物理设计演化开始对最终 QoR 负责，代码 Agent 则被测试、上下文可得性与安全隔离重新约束。</p><div class="tag-row" aria-label="兴趣标签"><span class="tag">硬件形式化验证</span><span class="tag">IC3 / PDR / SMT</span><span class="tag">逻辑综合 / 物理设计</span><span class="tag">Rust / 编译器</span><span class="tag">HLS / FPGA</span><span class="tag">本地大模型</span><span class="tag">Agent 工程</span><span class="tag">网络安全</span></div></div>
@@ -133,16 +133,6 @@
       <article class="action"><div class="action-kicker">Action 03 · 加固</div><h3>审计 Agent 的“输出到执行”路径</h3><p>列出所有会 eval、shell、SQL、浏览器或发网请求的节点，检查 sandbox 启用相位、身份验证、幂等性和最小权限；把 LLM 输出统一视为不可信用户输入。</p></article>
     </div></section>
 
-    <section id="limits" aria-labelledby="limits-title"><div class="limits"><h2 id="limits-title">访问限制与缺失</h2><ul>
-      <li><strong>CV：</strong>PDF 已完整读取并逐页渲染核对；仅提炼硬件形式化验证、IC3/PDR、逻辑综合、AI/LLM 证明、C/RTL 验证、GPU、编程语言与 EDA 等筛选标签，未在报告中暴露个人身份、联系方式或任职细节。</li>
-      <li><strong>Hacker News：</strong>通过 YC Firebase 官方 API 实际检查 topstories、newstories、beststories、askstories、showstories、jobstories 六流；本期筛选时共取得 685 个去重条目，今日相关候选 173 条，分数和评论数为 23:55 快照。</li>
-      <li><strong>Reddit：</strong>聚合 new 流可经 ego-browser 读取时间、分数、评论和正文；hot 路由返回空条目，因此本期以 new 流中可核验的高相关帖为主。部分低分帖子很新，推荐等级主要由技术内容而非分数决定。</li>
-      <li><strong>Google Scholar：</strong>推荐页可访问，但没有“今天”或“1 天前”组；按规则展开了 4 天前的高匹配折叠组，新增出现的 SynAct 与 Spec-Driven Hardware Evolution 已在 8 月 15 日报告收录，故本期不重复。6 天前的 RedPanda 仅作背景，未展开更旧组。</li>
-      <li><strong>Gmail Scholar Alerts：</strong>已按要求用 <code>gog</code> 只读搜索 <code>in:spam scholaralerts-noreply@google.com</code>；检索到 8 月 18 日 10:43 的推荐、作者相关研究与关键词快讯。本期从正文提取原始论文链接、合并重复快讯并与 8 月 15–18 日现有链接去重，新增 8 篇高匹配论文；引用通知、重复命中与低相关材料未收录。</li>
-      <li><strong>X：</strong>22 个账号均尝试访问；@x_sanjin、@easychen、@XAMTO_AI 页面返回空列表，无法确认今天动态。@camp_cn、@songguoxiansen、@wshuyi、@WeAllKins_cn、@MeetHubbleAI_CN、@LoopAI_xyz 等仅有旧内容；其余营销合作、无原始证据排名和重复宣传未收录。</li>
-      <li><strong>GitHub：</strong>Trending 的当日增星来自页面快照，仓库总星/fork 由 GitHub API 复核。PLFM_RADAR 的主语言被 GitHub 自动识别为 PLSQL，与项目性质不完全吻合，已明确标注而未自行改写。</li>
-      <li><strong>时间语义：</strong>arXiv recent 在 8 月 18 日榜单活跃，但部分 cross-list 的 v1 是 8 月 14–16 日；每条均标明原始提交时间。Rust GPU offload 的 v1 为 8 月 13 日，仅因今天在 HN 高度活跃而进入本期。</li>
-    </ul><p class="method">方法：先将 8 月 15–17 日报告中的全部外链设为禁入集合，再按规范化原始 URL、项目和事件跨来源去重；同一事件的 HN/Reddit 讨论合并到一个条目。补充 Gmail Scholar Alerts 后，原有 32 条全部保留，新增 8 篇与现有内容统一按兴趣相关性、技术深度、新鲜度、影响与讨论质量重新排序；来源无法独立证实的判断保留明确归因。</p></div></section>
   </main>
   <footer class="shell">每日技术兴趣雷达 · 2026-08-18<br><a class="back" href="#top">↑ 回到顶部</a> · <a class="back" href="../../index.html">← 返回报告归档</a></footer>
 </body>

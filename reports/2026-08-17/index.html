@@ -11,7 +11,7 @@
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a><a href="#limits">访问说明</a></nav></div></header>
+  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a></nav></div></header>
   <main id="top" class="shell">
     <section class="hero" aria-labelledby="page-title">
       <div><div class="eyebrow">Daily Tech Radar</div><h1 id="page-title">每日技术<br>兴趣雷达</h1><p class="hero-lead">今天最强的新增信号集中在三处：QBF 求解从 CEGAR 延伸到隐式 hitting set，形式化与代码审计开始显式记录覆盖范围，编程语言与系统工具则把类型、兼容性和隔离边界变成可执行约束。</p><div class="tag-row" aria-label="兴趣标签"><span class="tag">IC3 / PDR / QBF</span><span class="tag">Lean 4 / Z3</span><span class="tag">Frama-C / WP</span><span class="tag">RTL / 逻辑综合</span><span class="tag">Rust / 函数式语言</span><span class="tag">编译器</span><span class="tag">本地大模型</span><span class="tag">Agent 安全</span></div></div>
@@ -109,15 +109,6 @@
       <article class="action"><div class="action-kicker">Action 03 · 系统测量</div><h3>建立 Qwen3.8 的可复现预算曲线</h3><p>固定 10 个规格生成/证明任务，对 low、medium、xhigh × 32K/73K context 记录 token、墙钟、峰值 VRAM、MTP 接受率和 checker 通过率。</p></article>
     </div></section>
 
-    <section id="limits" aria-labelledby="limits-title"><div class="limits"><h2 id="limits-title">访问限制与缺失</h2><ul>
-      <li><strong>CV：</strong>PDF 已完整读取并逐页渲染核对；仅提炼了硬件形式化验证、IC3/PDR、逻辑综合、AI/LLM 证明、C/RTL 验证、GPU 与编程语言等兴趣标签，未在报告中暴露个人身份、联系方式或任职细节。</li>
-      <li><strong>Reddit：</strong>官方风格 JSON 请求统一返回 403；改用 ego-browser 访问聚合流后可读当日新帖、分数与评论数。聚合 hot 路由没有返回可提取条目，因此本期 Reddit 以 new 流中高讨论项为主。</li>
-      <li><strong>Google Scholar：</strong>推荐页可访问，但没有“今天”或“1 天前”组；高度匹配的 3 天前与 7 天前候选经跨日去重后均已在前两期出现，因此修订版不再重复收录。更旧折叠组未继续展开。</li>
-      <li><strong>Gmail Scholar Alerts：</strong>通过 <code>gog</code> 以只读方式搜索指定账号，指定发件人近 14 天无结果；扩大到近 30 天搜索 <code>scholaralerts</code> 仍为空，因此本期没有邮件论文可选。</li>
-      <li><strong>X：</strong>@dotey、@vista8、@easychen 页面返回空列表；@oran_ge、@op7418、@AYi_AInotes 导航时出现停留在其他账号页的异常，无法可靠确认其今日动态。其余账号若仅有旧帖、营销合作或空泛转发，均未收录。</li>
-      <li><strong>GitHub：</strong>23:58 快照时官方仍在调查严重事故，API、PR、Actions、Copilot 等受影响；Trending 与仓库指标来自事故期间可成功返回的页面/API，推送与 Pages 部署需在服务恢复后复核。</li>
-      <li><strong>时间语义：</strong>arXiv recent 在北京时间 8 月 17 日活跃，但多篇 v1 原始提交时间是 8 月 13–14 日 UTC，条目已明确区分。Protobuf LSP 原文发布于 1 月，仅因今天在 HN 重新活跃而收录。</li>
-    </ul><p class="method">方法：HN 使用 YC Firebase 官方 API 检查 topstories、newstories、beststories、askstories、showstories、jobstories 六流；跨来源以原始 URL、项目和事件去重。本修订版额外把 8 月 15–16 日两期全部原始链接设为禁入集合，移除了 9 条跨日重复项并重新排序。指标是快照而非长期保证。</p></div></section>
   </main>
   <footer class="shell">每日技术兴趣雷达 · 2026-08-17<br><a class="back" href="#top">↑ 回到顶部</a> · <a class="back" href="../../index.html">← 返回报告归档</a></footer>
 </body>

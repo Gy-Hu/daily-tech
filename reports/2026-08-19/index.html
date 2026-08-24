@@ -11,7 +11,7 @@
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a><a href="#limits">访问说明</a></nav></div></header>
+  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a></nav></div></header>
   <main id="top" class="shell">
     <section class="hero" aria-labelledby="page-title">
       <div><div class="eyebrow">Daily Tech Radar</div><h1 id="page-title">每日技术<br>兴趣雷达</h1><p class="hero-lead">今天的共同信号是“把生成放进可检查的证据链”：RTL 抽象要经 SMT 与 CEGAR 收口，Lean 结果需要固定提交、可信内核和语义披露，GPU 优化要做等价检查，Agent 的技能、记忆与迁移也要接受执行轨迹和多次运行的压力测试。</p><div class="tag-row" aria-label="兴趣标签"><span class="tag">硬件形式化验证</span><span class="tag">IC3 / PDR / CEGAR</span><span class="tag">Lean 4 / 证明可信基</span><span class="tag">编译器 / Rust / GPU</span><span class="tag">FPGA / NoC</span><span class="tag">本地大模型</span><span class="tag">Agent 工程</span><span class="tag">网络安全</span></div></div>
@@ -132,16 +132,6 @@
       <article class="action"><div class="action-kicker">Action 03 · 复测</div><h3>用端到端指标跑 DFlash 2</h3><p>在同一模型/量化/上下文下记录 tok/s、time-to-correct、acceptance length、显存和功耗；再切换采样温度，确认“输出分布不变”在实际引擎配置中成立。</p></article>
     </div></section>
 
-    <section id="limits" aria-labelledby="limits-title"><div class="limits"><h2 id="limits-title">访问限制与缺失</h2><ul>
-      <li><strong>CV：</strong>PDF 共 3 页，已渲染首页并提取全页文本；仅使用硬件形式化验证、IC3/PDR、等式饱和/逻辑综合、LLM 定理证明与推理验证、C/RTL 验证、GPU/编译器等兴趣标签，未在报告暴露身份、联系方式、单位或履历细节。</li>
-      <li><strong>Hacker News：</strong>YC Firebase API 实际读取 topstories 500、newstories 500、beststories 200、askstories 28、showstories 140、jobstories 31，六流合并后 1,167 个唯一 ID；Algolia 按上海自然日补充时间过滤，共取得当天 1,216 个 story、关键词候选 219 条。分数与评论为午夜前快照。</li>
-      <li><strong>Reddit：</strong>通过 ego-browser 遍历聚合 new 流至上海日界，共读取今天 132 帖；分数可能因 Reddit vote fuzzing 波动。热门结果明显被 LocalLLaMA 占据，形式化方法子版当天可见高质量新帖较少。</li>
-      <li><strong>Google Scholar：</strong>推荐页成功访问，但没有“今天”或“1 天前”组；按规则展开 4 天前 CEGAR 论文详情，并尝试展开 5 天前组。5 天前 SynAct 已在旧报告出现，7 天及更旧仅作背景，未冒充今日内容。</li>
-      <li><strong>Gmail Scholar Alerts：</strong>用 <code>gog</code> 只读执行 <code>in:spam scholaralerts-noreply@google.com after:2026/8/18 before:2026/8/20</code>，确认 8 月 19 日两批快讯位于 SPAM；解码推荐、作者相关与关键词邮件后，选出 HINT 与 AssumptionMiner。二者不是今天发表，已明确标注原始 v1 日期。</li>
-      <li><strong>X：</strong>22 个账号均通过 ego-browser 尝试读取。@dotey、@ruanyf、@oran_ge、@op7418、@AYi_AInotes、@servasyy_ai、@songguoxiansen、@lencx_、@x_sanjin、@MeetHubbleAI_CN、@easychen 页面标题可加载但时间线返回空条目，无法确认今天动态；@camp_cn、@wshuyi、@WeAllKins_cn、@LoopAI_xyz 仅见旧内容；Web3 营销与无证据排名未收录。</li>
-      <li><strong>GitHub Trending：</strong>日榜共读取 14 个仓库。与兴趣最相关的 OpenViking、ai-memory、oMLX、munder-difflin、Cybersecurity Skills 均已在 8 月 15–18 日报告出现，本期按去重规则不再列项目卡；仅收录未出现且技术相关的 NautilusTrader，并用 GitHub API 复核语言、总星与 forks。</li>
-      <li><strong>时间语义：</strong>本次扫描在 8 月 19 日 23:58 左右固定快照，成稿跨过午夜，但未混入 8 月 20 日内容。arXiv recent 采用 UTC 提交时间并换算 CST；Scholar/旧论文只有今天新推荐或今天高质量讨论时才进入。</li>
-    </ul><p class="method">方法：先将 8 月 15–18 日 277 个历史外链与全部 arXiv ID 设为禁入集合，再以规范化 URL、论文 ID、项目和事件跨来源合并；同一事件的 HN、Reddit、GitHub 与 X 讨论放入同一条。43 条精选按兴趣相关性、技术深度、新鲜度、影响与讨论质量统一排序；无法独立复现的性能数字保留作者/报道归因。</p></div></section>
   </main>
   <footer class="shell">每日技术兴趣雷达 · 2026-08-19<br><a class="back" href="#top">↑ 回到顶部</a> · <a class="back" href="../../index.html">← 返回报告归档</a></footer>
 </body>

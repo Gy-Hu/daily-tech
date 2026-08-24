@@ -472,7 +472,7 @@
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a><a href="#limits">访问说明</a></nav></div></header>
+  <header class="topbar"><div class="shell topbar-inner"><div class="topbar-start"><a class="archive-link" href="../../index.html" aria-label="返回报告导航页">← 返回归档</a><a class="brand" href="#top">技术兴趣雷达</a></div><nav aria-label="页面导航"><a href="#trends">趋势</a><a href="#stories">精选</a><a href="#accounts">账号动态</a><a href="#actions">今日行动</a></nav></div></header>
 
   <main id="top"><div class="shell">
     <section class="hero" aria-labelledby="page-title">
@@ -554,14 +554,6 @@
       <article class="action"><div class="action-kicker">Action 03 · 测量</div><h3>建立本地模型资源基线</h3><p>用固定提示集测 Qwen3.8-27B 的 KV cache、TPS 与正确率，再将 Soup 和 Needle 作为显存受限与边缘部署对照。</p></article>
     </div></section>
 
-    <section id="limits" aria-labelledby="limits-title"><div class="limits"><h2 id="limits-title">访问限制与缺失</h2><ul>
-      <li>Reddit JSON 接口仍返回 HTTP 403；本轮使用公开聚合页和帖子 DOM 核验标题、UTC 时间、分数、评论与正文。个别刚发布帖子仅显示“•”而无分数，未编造数值。</li>
-      <li>GitHub Trending 不给出精确上榜时间或项目发布日期；只记录 8 月 15 日 23:50 的榜单快照，并用 GitHub API 复核总星、fork、语言与更新时间。</li>
-      <li>arXiv recent 页面是当天可见的最新批次，但论文元数据多为 8 月 12–13 日；正文逐条保留元数据日期，没有把它们写成 8 月 15 日发布。</li>
-      <li>Google Scholar 推荐页可访问；最新推荐为 5 天前的 FSGen，其余主要为 6–25 天前，因此只降级收录一条并明确非今日内容。</li>
-      <li>22 个指定 X 账号均完成公开页面检查。@Camp_cn、@MeetHubbleAI_CN、@LoopAI_xyz 等时间窗内无更新；其余未收录账号主要是生活内容、营销、投票或重复宣传。</li>
-      <li>Codex kernel 文章原发 7 月 8 日、SCAM 原发 2 月、Writergate 原发 8 月 12 日；它们因 8 月 15 日 HN 活跃而收录，均已明确标注旧发布日期。</li>
-    </ul></div></section>
   </div></main>
 
   <footer><div class="shell">每日技术兴趣雷达 · 内容截止 2026-08-15 23:58，指标刷新于 2026-08-16 00:02（Asia/Shanghai）· 所有事实尽量指向原始来源</div></footer>
